@@ -1,0 +1,82 @@
+importFrom(car, Anova, avPlots, boxCox, crPlots, hccm, ncvTest, qqPlot, spreadLevelPlot)
+importFrom(psych, describe)
+importFrom(pwr, pwr.f2.test)
+importFrom(gplots, barplot2)
+importFrom(gvlma, gvlma)
+importFrom(AICcmodavg, predictSE)
+importFrom(lme4, isREML)
+importFrom(pbkrtest, KRmodcomp, getKR)
+importFrom(grDevices, dev.new, dev.cur, pdf, tiff)
+importFrom(graphics, abline, axis, hist, identify, layout, layout.show, lines, mtext,
+           par, plot, points, polygon, rug, segments, stripchart, text)
+importFrom(stats, AIC, BIC, IQR, as.formula, coef,
+             confint, contr.helmert, contr.sum, contr.treatment,
+             cooks.distance, covratio, density, deviance,
+             dfbetas, dnorm, fitted.values, hatvalues, logLik,
+             median, model.matrix, nobs, pchisq, pf, predict,
+             printCoefmat, pt, qf, qt, residuals, rstudent,
+             sd, terms)
+importFrom(utils, read.table, write.table)
+export(
+  dfMerge,
+  dfReadDat,
+  dfRemoveCases,
+  dfRownames,
+  dfWriteDat,
+  figAxis,
+  figBarPlot,
+  figConfidenceBand,
+  figErrBars,
+  figLabDefaults,
+  figLayout,
+  figLegend,
+  figLines,
+  figNewDevice,
+  figPlotRegion,
+  figPoints,
+  figSetDefaults,
+  figStripChart,
+  figText,
+  modelAssumptions,
+  modelBoxCox,
+  modelCaseAnalysis,
+  modelCompare,
+  modelCorrectSE,
+  modelEffectSizes,
+  modelErrors,
+  modelPower,
+  modelPredictions,
+  modelR2,
+  modelRmd,
+  modelSummary,
+  varContrasts,
+  varDescribe,
+  varDescribeBy,
+  varOdd,
+  varPadString,
+  varParse,
+  varPlot,
+  varRecode,
+  varRegressors,
+  varRename,
+  varReverse,
+  varScore,
+  #Deprecated functions
+  lm.boxCox,
+  lm.codeRegressors,
+  lm.correctSE,
+  lm.describeGroups,
+  lm.deltaR2,
+  lm.describeData,
+  lm.figSum,
+  lm.mergeData,
+  lm.pointEstimates,
+  lm.readDat,
+  lm.removeCases,
+  lm.renameVar,
+  lm.setContrasts,
+  lm.setRownames,
+  lm.stripChart,
+  lm.sumSquares,
+  lm.writeDat
+)

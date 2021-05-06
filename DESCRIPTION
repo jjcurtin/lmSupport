@@ -1,0 +1,16 @@
+Package: lmSupport
+Type: Package
+Title: Support for Linear Models
+Version: 2.9.15
+Date: 2018-12-04
+Author: John Curtin <jjcurtin@wisc.edu>
+Maintainer: John Curtin <jjcurtin@wisc.edu>
+Description: Provides tools and a consistent interface to support analyses using General, Generalized, and Multi-level Linear Models.
+License: GPL (>= 2)
+Depends:
+Imports:
+    AICcmodavg, car, gplots, graphics, grDevices, gvlma, lme4, pbkrtest, psych, pwr, stats, utils
+LazyLoad: yes
+LazyData: true
+URL: http://dionysus.psych.wisc.edu/
+NeedsCompilation: no
